@@ -1,0 +1,92 @@
+// mobile và tablet
+@media (max-width: 1023px) {
+    .header__menu {
+        background: #ffff;
+        padding: 10px;
+        z-index: 10;
+        width: 292px;
+    }
+    #header {
+        padding: 16px !important;
+    }
+    .header__container {
+        align-items: unset;
+        .header__menu_inner {
+            // display: block !important;
+            position: relative;
+            .header__menu {
+                display: block !important;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                text-align: right;
+                li {
+                    padding: 10px 0;
+                    margin-right: unset !important;
+                }
+                &.d-none {
+                    display: none !important;
+                }
+                &.open {
+                    display: block !important;
+                    transition: all .4s ease-in;
+                }
+            }
+            .btn--header {
+                margin-right: 8px;
+            }
+        }
+    }
+    .nav__menu {
+        display: unset !important;
+    }
+}
+
+// tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+    figure.snip1421 {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .header__img-3 {
+        top: 8rem !important;
+    }
+    .header__img-2 {
+        right: -2rem !important;
+    }
+}
+    
+    
+// mobile
+@media (max-width: 739px) {
+    figure.snip1421 {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .header__content {
+        display: block !important;
+        .header__content-about {
+            margin-top: unset;
+            text-align: center;
+            .btn-primary {
+                display: none !important;
+            }
+        }
+        .header__content-wrapper {
+            width: 100%;
+            .header__img-1 {
+                left: 0 !important;
+                top: 2rem !important;
+            }
+        }
+    }
+    .header__logo {
+        img {
+            width: 100px;
+        }
+    }
+    .btn--header {
+        padding: 2px 6px !important;
+    }
+   
+}
