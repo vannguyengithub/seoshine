@@ -234,7 +234,6 @@ li {
 }
 
 #header {
-  background-image: url("../../styles/images/background-dark.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
