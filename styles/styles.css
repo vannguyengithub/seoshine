@@ -246,6 +246,11 @@ li {
   }
 }
 
+.l-container {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
