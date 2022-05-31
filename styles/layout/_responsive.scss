@@ -5,6 +5,14 @@
         padding: 10px;
         z-index: 10;
         width: 292px;
+        border-radius: 8px;
+        border: 1px solid #808080;
+        li{
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-primary;
+            }
+        }
+
     }
     #header {
         padding: 16px !important;
@@ -25,11 +33,15 @@
                     margin-right: unset !important;
                 }
                 &.d-none {
-                    display: none !important;
+                    visibility: hidden;
+                    opacity: 0;
+                    // display: none !important;
                 }
                 &.open {
-                    display: block !important;
-                    transition: all .4s ease-in;
+                    visibility:visible;
+                    opacity: 1;
+                    // display: block !important;
+                    transition: all .3s ease-in;
                 }
             }
             .btn--header {

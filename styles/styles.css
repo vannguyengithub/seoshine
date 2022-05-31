@@ -151,6 +151,11 @@ li {
     padding: 10px;
     z-index: 10;
     width: 292px;
+    border-radius: 8px;
+    border: 1px solid #808080;
+  }
+  .header__menu li:not(:last-child) {
+    border-bottom: 1px solid #957000;
   }
   #header {
     padding: 16px !important;
@@ -175,12 +180,14 @@ li {
     margin-right: unset !important;
   }
   .header__container .header__menu_inner .header__menu.d-none {
-    display: none !important;
+    visibility: hidden;
+    opacity: 0;
   }
   .header__container .header__menu_inner .header__menu.open {
-    display: block !important;
-    -webkit-transition: all .4s ease-in;
-    transition: all .4s ease-in;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
   }
   .header__container .header__menu_inner .btn--header {
     margin-right: 8px;
