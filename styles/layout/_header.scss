@@ -66,9 +66,12 @@
     margin-top: 120px;
     margin-right: 10rem;
     h1 {
-        @include font-config(20px, 600);
+        @include font-config(45px, 600);
         @include text-spacing();
         margin-bottom: 8px;
+    }
+    .btn-primary {
+        width: 200px;
     }
 }
 
