@@ -4,16 +4,19 @@
     margin: 0;
     box-sizing: border-box;
     color: $color-grey;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 .flex-center {
-    justify-content: center;   
+    justify-content: center;
 }
 
 .container {
@@ -22,38 +25,38 @@ li {
 
 // 
 #cursor {
-	position: absolute;
-	background-color: #ffffff;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	z-index: 1;
-	border: 6px solid #957000;
-	filter: blur(1px);
-	box-shadow: 0 0 45px 7px $color-primary;
-	z-index: 2;
-	pointer-events: none;
+    position: absolute;
+    background-color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    border: 6px solid #957000;
+    filter: blur(1px);
+    box-shadow: 0 0 45px 7px $color-primary;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .trailEl {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background-color: $color-primary;
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	filter: blur(4px);
-	z-index: 1;
-	pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-primary;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    filter: blur(4px);
+    z-index: 1;
+    pointer-events: none;
 }
 
 @keyframes fade-out {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

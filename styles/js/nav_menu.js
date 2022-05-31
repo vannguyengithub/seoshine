@@ -24,8 +24,7 @@ if (triggerAside) {
 
 /* Demo purposes only */
 $(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
+    function() {
+        $(this).removeClass("hover");
     }
-  );
-  
+);

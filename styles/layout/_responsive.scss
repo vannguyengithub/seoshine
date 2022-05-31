@@ -7,12 +7,11 @@
         width: 292px;
         border-radius: 8px;
         border: 1px solid #808080;
-        li{
+        li {
             &:not(:last-child) {
                 border-bottom: 1px solid $color-primary;
             }
         }
-
     }
     #header {
         padding: 16px !important;
@@ -38,7 +37,7 @@
                     // display: none !important;
                 }
                 &.open {
-                    visibility:visible;
+                    visibility: visible;
                     opacity: 1;
                     // display: block !important;
                     transition: all .3s ease-in;
@@ -55,7 +54,7 @@
 }
 
 // tablet
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 1024px) {
     figure.snip1421 {
         width: 250px !important;
         height: 250px !important;
@@ -63,12 +62,11 @@
     .header__img-3 {
         top: 8rem !important;
     }
-    .header__img-2 {
-        right: -2rem !important;
-    }
+    // .header__img-2 {
+    //     right: -2rem !important;
+    // }
 }
-    
-    
+
 // mobile
 @media (max-width: 739px) {
     figure.snip1421 {
@@ -80,6 +78,7 @@
         .header__content-about {
             margin-top: unset;
             text-align: center;
+            margin-right: unset;
             .btn-primary {
                 display: none !important;
             }
@@ -87,8 +86,19 @@
         .header__content-wrapper {
             width: 100%;
             .header__img-1 {
+                position: unset !important;
+                margin: 0 auto;
+                // left: 0 !important;
+                // top: 2rem !important;
+            }
+            .header__img-2 {
+                // position: absolute !important;
+                right: 0 !important;
+                top: 8rem !important;
+            }
+            .header__img-3 {
                 left: 0 !important;
-                top: 2rem !important;
+                top: 8rem !important;
             }
         }
     }
@@ -100,5 +110,4 @@
     .btn--header {
         padding: 2px 6px !important;
     }
-   
 }
