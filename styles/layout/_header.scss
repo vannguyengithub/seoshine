@@ -1,6 +1,8 @@
 #header {}
 
 .header__container {
+    background: #000;
+    padding:  0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +84,7 @@
 .header__content {
     display: flex;
     justify-content: center;
-    margin-top: 28px;
+    padding-top: 40px;
     .header__content-box {
         position: relative;
         // width: calc(100% - 50%);

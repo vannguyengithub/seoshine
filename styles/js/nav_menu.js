@@ -4,14 +4,14 @@
 // $(document).on('click', '.nav__menu',
 //     function(e) {
 //         navMenu.addClass('open');
-//         // $('body').addClass('no-scroll');
+//         $('body').addClass('no-scroll');
 //     });
-// $(document).on('click', '.nav__menu',
+// $(document).on('click', 'body',
 //     function(e) {
-//         navMenu.removeClass('d-none');
-//         // $('body').removeClass('no-scroll');
+//         navMenu.removeClass('open');
+//         $('body').removeClass('no-scroll');
 //     });
-// // -----------
+// -----------
 
 var elementAsideLeftBar = document.getElementById('header__menu');
 var triggerAside = document.getElementById('nav__menu');
