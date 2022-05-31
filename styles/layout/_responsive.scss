@@ -59,26 +59,41 @@
         width: 200px !important;
         height: 200px !important;
     }
-    .header__img-3 {
-        top: 8rem !important;
-    }
-    .header__content-about {
-        margin-top: 85px !important;
-        margin-right: 8rem !important;
-        h1 {
-            font-size: 28px !important;
+    .header__content {
+        display: block !important;
+        .header__content-about {
+            margin-top: unset;
+            margin-right: unset;
+            text-align: center;
+            .btn-primary {
+                margin: 0 auto 30px auto !important;
+            }
+        }
+        .header__content-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+            .header__img-1 {
+                left: unset !important;
+                top: unset !important;
+            }
+            .header__img-2{
+                right: unset !important;
+                top: unset !important;
+            }
+            .header__img-3{
+                top: unset !important;
+            }
         }
     }
-    // .header__img-2 {
-    //     right: -2rem !important;
-    // }
 }
 
 // mobile
 @media (max-width: 739px) {
     figure.snip1421 {
-        width: 200px !important;
-        height: 200px !important;
+        width: 150px !important;
+        height: 150px !important;
     }
     .header__content {
         display: block !important;
@@ -92,20 +107,19 @@
         }
         .header__content-wrapper {
             width: 100%;
+            display: flex;
+            justify-content: center;
             .header__img-1 {
-                position: unset !important;
-                margin: 0 auto;
-                // left: 0 !important;
-                // top: 2rem !important;
+                left: -4rem !important;
+                top: 0 !important;
             }
             .header__img-2 {
-                // position: absolute !important;
-                right: 0 !important;
-                top: 8rem !important;
+                top: -150px !important;
+                right: -4rem !important;
             }
             .header__img-3 {
+                top: -12rem !important;
                 left: 0 !important;
-                top: 8rem !important;
             }
         }
     }
