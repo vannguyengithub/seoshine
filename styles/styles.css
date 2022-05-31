@@ -246,14 +246,6 @@ li {
   }
 }
 
-#header {
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: cover;
-  padding: 16px 40px;
-}
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
