@@ -23,8 +23,9 @@ $(document).ready(function(){
             settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
+            // centerPadding: '40px',
+            slidesToShow: 1,
+            centerPadding: 20,
             }} 
         ]
     });
