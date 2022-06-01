@@ -190,40 +190,6 @@ li {
   padding: 16px;
 }
 
-.section__service .service__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 24px;
-}
-
-.section__service .service__title h3 {
-  font-size: 43px;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: .01em;
-  color: #000;
-  position: relative;
-}
-
-.section__service .service__title h3::after {
-  content: "";
-  position: absolute;
-  height: 24px;
-  width: 70%;
-  bottom: 10px;
-  left: -13px;
-  background: -webkit-gradient(linear, left top, right top, from(yellow), to(#957000));
-  background: linear-gradient(to right, yellow, #957000);
-  z-index: -1;
-}
-
 .section__service .service__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,13 +213,18 @@ li {
   background: #ffff;
 }
 
+.section__service .service__list .service__item:hover {
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
+}
+
 .section__service .service__list .service__item h4 {
   text-align: center;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 150%;
   letter-spacing: .01em;
-  color: #0909ad;
+  color: #000;
   margin-bottom: 18px;
   position: relative;
 }
@@ -309,6 +280,41 @@ li {
   font-weight: 600;
   line-height: 150%;
   letter-spacing: .01em;
+}
+
+.service__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.service__title h3 {
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: .01em;
+  color: #000;
+  position: relative;
+}
+
+.service__title h3::after {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 70%;
+  bottom: 10px;
+  left: -13px;
+  background: -webkit-gradient(linear, left top, right top, from(yellow), to(#957000));
+  background: linear-gradient(to right, yellow, #957000);
+  z-index: -1;
 }
 
 @media (max-width: 1023px) {

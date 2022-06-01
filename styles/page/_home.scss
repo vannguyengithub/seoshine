@@ -2,29 +2,7 @@
 .section__service {
     background: url(./images/bg-service.png);
     padding: 16px;
-    .service__title {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        margin-bottom: 24px;
-        h3{
-            @include font-config(43px, 600);
-            @include text-spacing();
-            color: $color-dark;
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                height: 24px;
-                width: 70%;
-                bottom: 10px;
-                left: -13px;
-                background: -webkit-gradient(linear, left top, right top, from(#b138a8), to(#fa7405));
-                background: linear-gradient(to right, yellow, #957000);
-                z-index: -1;
-            }
-        }
-    }
+    
     .service__list {
         display: flex;
         justify-content: center;
@@ -32,7 +10,7 @@
         gap: 12px;
         .service__item {
             &:hover {
-                // transform: scaleY(1.1);
+                transform: translate3d(0, -10px, 0);
             }
             width: calc(33.33% - 8px);
             box-shadow: 0px 0px 14px $color-primary;
@@ -42,9 +20,9 @@
             background: $color-white;
             h4 {
                 text-align: center;
-                @include font-config(18px, 400);
+                @include font-config(18px, 600);
                 @include text-spacing();
-                color: #0909ad;
+                color: #000;
                 margin-bottom: 18px;
                 position: relative;
                 &::after {
@@ -84,6 +62,30 @@
                 @include font-config(14px, 600);
                 @include text-spacing();
             }
+        }
+    }
+}
+.service__title {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 24px 0;
+    text-align:center;
+    h3{
+        @include font-config(43px, 600);
+        @include text-spacing();
+        color: $color-dark;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 24px;
+            width: 70%;
+            bottom: 10px;
+            left: -13px;
+            background: -webkit-gradient(linear, left top, right top, from(#b138a8), to(#fa7405));
+            background: linear-gradient(to right, yellow, #957000);
+            z-index: -1;
         }
     }
 }
