@@ -7,7 +7,7 @@ $(document).ready(function(){
     autoplaySpeed: 4000,
     prevArrow: false,
     nextArrow: false,
-    centerPadding: 50,
+    centerPadding: 30,
     responsive: [
         {
             breakpoint: 1024,

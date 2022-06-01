@@ -136,4 +136,12 @@
             width: 100% !important;
         }
     }
+    .seoshine__circle-inner{
+        width: 250px !important;
+        height: 250px !important;
+        .seoshine__circle-counter {
+            top: 0 !important;
+            right: -12px !important;
+        }
+    }
 }
