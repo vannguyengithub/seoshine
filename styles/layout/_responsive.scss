@@ -1,25 +1,16 @@
 // mobile và tablet
 @media (max-width: 1023px) {
     .header__menu {
-        background: #ffff;
+        background: $color-white;
         padding: 10px;
         z-index: 10;
         width: 292px;
         border-radius: 8px;
-        border: 1px solid #808080;
-        // li {
-        //     &:not(:last-child) {
-        //         border-bottom: 1px solid $color-primary;
-        //     }
-        // }
-    }
-    #header {
-        // padding: 16px !important;
+        border: 1px solid $color-grey;
     }
     .header__container {
         align-items: unset;
         .header__menu_inner {
-            // display: block !important;
             position: relative;
             .header__menu {
                 display: block !important;
@@ -34,12 +25,10 @@
                 &.d-none {
                     visibility: hidden;
                     opacity: 0;
-                    // display: none !important;
                 }
                 &.open {
                     visibility: visible;
                     opacity: 1;
-                    // display: block !important;
                     transition: all .3s ease-in;
                 }
             }
@@ -133,5 +122,18 @@
     }
     .header__content-about h1 {
         font-size: 26px !important;
+    }
+    // service
+    .service__list {
+        flex-wrap: unset !important;
+        justify-content: unset !important;
+        padding: 12px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .service__item {
+            width: 100% !important;
+        }
     }
 }
