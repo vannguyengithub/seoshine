@@ -76,10 +76,16 @@
             }
         }
     }
+    .seoshine__client .seoshine__client-list li {
+        width: calc(100% / 3);
+    }
 }
 
 // mobile
 @media (max-width: 739px) {
+    .service__title h3 {
+        font-size: 30px;
+    }
     figure.snip1421 {
         width: 200px !important;
         height: 200px !important;
@@ -143,5 +149,8 @@
             top: 0 !important;
             right: -12px !important;
         }
+    }
+    .seoshine__client .seoshine__client-list li {
+        width: calc(100% / 2);
     }
 }

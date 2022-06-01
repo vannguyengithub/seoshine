@@ -155,3 +155,26 @@
 .section__count {
     background: url(./images/bg-service.png);
 }
+
+// client 
+.seoshine__client {
+    // padding: 0 16px;
+    .seoshine__client-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background: url(./images/background-dark-min.jpg);
+        padding: 16px;
+
+        width: 100%;
+        background-size: cover;
+        background-position: cover; 
+        li {
+            width: calc(100% / 6);
+            text-align: center;
+            img {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(105%) contrast(104%);
+            }
+        }
+    }
+}
