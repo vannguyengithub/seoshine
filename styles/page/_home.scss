@@ -7,12 +7,12 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 16px;
         .service__item {
             &:hover {
                 transform: translate3d(0, -10px, 0);
             }
-            width: calc(33.33% - 8px);
+            width: calc(25% - 16px);
             box-shadow: 0px 0px 14px $color-primary;
             border-radius: 10px;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,5 +177,17 @@
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(105%) contrast(104%);
             }
         }
+    }
+}
+// error
+.seoshine__error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-txt {
+        display: block;
+        text-align: center;
+        @include font-config(30px, 600);
+        @include text-spacing();
     }
 }

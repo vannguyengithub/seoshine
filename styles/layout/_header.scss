@@ -17,7 +17,7 @@
             display: flex;
             align-items: center;
             li {
-                @include font-config(20px, 600);
+                @include font-config(18px, 600);
                 @include text-spacing();
                 // &:not(:last-child) {
                 // }

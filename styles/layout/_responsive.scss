@@ -79,6 +79,9 @@
     .seoshine__client .seoshine__client-list li {
         width: calc(100% / 3);
     }
+    .section__service .service__list .service__item {
+        width: calc(33.33% - 16px);
+    }
 }
 
 // mobile
