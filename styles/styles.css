@@ -507,7 +507,7 @@ li {
 
 @media (max-width: 739px) {
   .service__title h3 {
-    font-size: 30px;
+    font-size: 33px;
   }
   figure.snip1421 {
     width: 200px !important;
@@ -962,5 +962,28 @@ li {
     -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
             transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
+}
+
+header {
+  width: 100%;
+  z-index: 20;
+}
+
+header.can-animate {
+  -webkit-transition: visibility 0s 0.3s linear, -webkit-transform 0.3s ease;
+  transition: visibility 0s 0.3s linear, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, visibility 0s 0.3s linear;
+  transition: transform 0.3s ease, visibility 0s 0.3s linear, -webkit-transform 0.3s ease;
+}
+
+header.is-fixed {
+  position: fixed;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
+header.scroll-up {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 /*# sourceMappingURL=styles.css.map */
