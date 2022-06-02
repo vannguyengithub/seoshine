@@ -1,6 +1,6 @@
 //start:  service
 .section__service {
-    background: url(./images/bg-service.png);
+    // background: url(./images/bg-service.png);
     padding: 16px;
     
     .service__list {
@@ -83,8 +83,9 @@
             width: 70%;
             bottom: 10px;
             left: -13px;
-            background: -webkit-gradient(linear, left top, right top, from(#b138a8), to(#fa7405));
-            background: linear-gradient(to right, yellow, #957000);
+            // background: -webkit-gradient(linear, left top, right top, from(#b138a8), to(#fa7405));
+            // background: linear-gradient(to right, yellow, #957000);
+            background: linear-gradient(to bottom, #ffcc99 0%, #ffff66 100%);
             z-index: -1;
         }
     }
@@ -153,7 +154,7 @@
     }
 }
 .section__count {
-    background: url(./images/bg-service.png);
+    // background: url(./images/bg-service.png);
 }
 
 // client 
