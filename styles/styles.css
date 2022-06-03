@@ -730,8 +730,8 @@ li {
 .modal.active {
   visibility: inherit;
   opacity: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .no-scroll {
