@@ -15,12 +15,49 @@
 <body>
     <main class="container">
         <div id="cursor"></div>
+        <!-- start: modal -->
+        <div class="modal">
+            <div class="modal__size">
+                <button class="modal__close gg-close">
+                    <!-- <i class=""></i> -->
+                </button>
+                <div class="modal__size-item">
+                    <h4>Nói mong muốn của bạn với chúng tôi.</h4>
+                    <p>
+                        Donec lobortis magna at ligula tristique maximus. Suspendisse lacinia ligula lacus. Nunc id risus a dui bibendum finibus tincidunt eu magna. Suspendisse a dictum neque. Suspendisse sit amet diam et libero posuere pharetra. Sed vel magna nec dolor aliquam
+                        lobortis vitae id .
+                    </p>
+                    <form action="">
+                        <div class="modal__user">
+                            <label>Họ tên*</label>
+                            <input type="text" placeholder="Họ tên">
+                        </div>
+                        <div class="modal__user">
+                            <label>Email*</label>
+                            <input type="email" placeholder="Email...">
+                        </div>
+                        <div class="modal__user">
+                            <label>SĐT*</label>
+                            <input type="phone" placeholder="84+ ...">
+                        </div>
+                        <div class="modal__user">
+                            <label>Lưu ý*</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal__size-item">
+                    <img src="https://assets.codepen.io/495197/undraw_Newsletter_re_wrob.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end: modal -->
         <div>
             <header id="header" style="margin-bottom: 1px;">
                 <div class="header__container">
-                    <div class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <img src="./styles/images/logo_seoshine.png" alt="" width="160" height="100">
-                    </div>
+                    </a>
                     <div class="header__menu_inner">
                         <ul id="header__menu" class="header__menu d-none">
                             <li>
@@ -60,12 +97,12 @@
                             <span>
                                 ĐĂNG KÝ
                             </span>
-                        </button>
+                            </button>
                         <i class="gg-menu nav__menu" id="nav__menu"></i>
                     </div>
                 </div>
             </header>
-            <div class="header__content" >
+            <div class="header__content">
                 <div class="header__content-about">
                     <h1 class="wow bounceInLeft" data-wow-delay="0.5s">
                         DỊCH VỤ <br> MARKETING ONLINE
@@ -422,7 +459,7 @@
     <script src="./styles/counter/jquery.counterup.min.js"></script>
     <script src="./styles/js/scrollHeader.js"></script>
     <script type="text/javascript" src="./styles/js/cdn-sclick.js"></script>
-    
+
 </body>
 
 </html>
