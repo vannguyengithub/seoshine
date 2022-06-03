@@ -19,12 +19,17 @@
             li {
                 @include font-config(18px, 600);
                 @include text-spacing();
+                background: linear-gradient(to bottom, #ffcc99 0%, #ffff66 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
                 margin-right: 16px;
                 padding: 16px;
                 border-radius: 8px;
                 &:hover {
                     background: linear-gradient(to bottom, #ffcc99 0%, #ffff66 100%);
                     transition: all .5s ease;
+                    -webkit-text-fill-color: unset;
                     a {
                         color: #000;
                     }
