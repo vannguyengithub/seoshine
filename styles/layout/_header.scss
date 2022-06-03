@@ -19,19 +19,12 @@
             li {
                 @include font-config(18px, 600);
                 @include text-spacing();
-                // &:not(:last-child) {
-                // }
                 margin-right: 16px;
                 padding: 16px;
-                // a {
-                //     transition: all .4s;
-                //     &:hover {
-                //         color: $color-primary;
-                //     }
-                // }
+                border-radius: 8px;
                 &:hover {
                     background: linear-gradient(to bottom, #ffcc99 0%, #ffff66 100%);
-                    border-radius: 8px;
+                    transition: all .5s ease;
                     a {
                         color: #000;
                     }

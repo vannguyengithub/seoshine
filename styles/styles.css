@@ -186,6 +186,7 @@ li {
 }
 
 .section__service {
+  background: url(./images/bg-service.png);
   padding: 16px;
 }
 
@@ -203,13 +204,12 @@ li {
 
 .section__service .service__list .service__item {
   width: calc(25% - 16px);
-  -webkit-box-shadow: 0px 0px 14px #957000;
-          box-shadow: 0px 0px 14px #957000;
   border-radius: 10px;
   -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 16px;
   background: #ffff;
+  border: 1px solid rgba(16, 16, 16, 0.1);
 }
 
 .section__service .service__list .service__item:hover {
@@ -389,6 +389,10 @@ li {
   background-image: linear-gradient(to right, #588157, #A3B18A);
 }
 
+.section__count {
+  background: url(./images/bg-service.png);
+}
+
 .seoshine__client .seoshine__client-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +436,40 @@ li {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
+  line-height: 150%;
+  letter-spacing: .01em;
+}
+
+.seoshine__help-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: orangered;
+}
+
+.seoshine__help-list .seoshine__help-item {
+  padding: 20px;
+  width: calc(100% / 3);
+}
+
+.seoshine__help-list .seoshine__help-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: .01em;
+  margin-top: 16px;
+}
+
+.seoshine__help-list .seoshine__help-item p {
+  font-size: 16px;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: .01em;
 }
@@ -620,6 +658,12 @@ li {
     height: 50%;
     margin-top: 10px;
   }
+  .seoshine__help-list {
+    display: block;
+  }
+  .seoshine__help-list .seoshine__help-item {
+    width: 100%;
+  }
 }
 
 .modal {
@@ -782,12 +826,14 @@ li {
   letter-spacing: .01em;
   margin-right: 16px;
   padding: 16px;
+  border-radius: 8px;
 }
 
 .header__container .header__menu_inner .header__menu li:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffcc99), to(#ffff66));
   background: linear-gradient(to bottom, #ffcc99 0%, #ffff66 100%);
-  border-radius: 8px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header__container .header__menu_inner .header__menu li:hover a {

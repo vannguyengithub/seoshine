@@ -160,7 +160,7 @@
     .seoshine__client .seoshine__client-list li {
         width: calc(100% / 2);
     }
-   .modal .modal__size {
+    .modal .modal__size {
        display: block !important;
        width: 300px !important;
        .modal__close {
@@ -176,5 +176,11 @@
                margin-top: 10px;
            }
        }
-   }
+    }
+    .seoshine__help-list {
+       display: block;
+       .seoshine__help-item {
+           width: 100%;
+       }
+    }
 }
