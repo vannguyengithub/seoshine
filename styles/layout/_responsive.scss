@@ -40,6 +40,7 @@
     .nav__menu {
         display: unset !important;
     }
+
 }
 
 // tablet
@@ -81,6 +82,9 @@
     }
     .section__service .service__list .service__item {
         width: calc(33.33% - 16px);
+    }
+    .modal .modal__size {
+        width: 600px !important;
     }
 }
 
@@ -156,4 +160,21 @@
     .seoshine__client .seoshine__client-list li {
         width: calc(100% / 2);
     }
+   .modal .modal__size {
+       display: block !important;
+       width: 300px !important;
+       .modal__close {
+           top: 2px !important;
+           right: 2px !important;
+       }
+       .modal__size-item {
+           width: 100%;
+           text-align: center ;
+           img {
+               width: 50%;
+               height: 50%;
+               margin-top: 10px;
+           }
+       }
+   }
 }
