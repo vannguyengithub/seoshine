@@ -475,13 +475,15 @@ li {
 }
 
 @media (max-width: 1023px) {
+  .close-nav-menu {
+    display: block !important;
+    margin: 20px auto auto;
+    cursor: pointer;
+  }
   .header__menu {
     background: #ffff;
     padding: 10px;
     z-index: 10;
-    width: 292px;
-    border-radius: 8px;
-    border: 1px solid #808080;
   }
   .header__container {
     -webkit-box-align: unset;
@@ -493,10 +495,12 @@ li {
   }
   .header__container .header__menu_inner .header__menu {
     display: block !important;
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 105px;
     right: 0;
-    text-align: right;
+    left: 0;
+    bottom: 0;
+    text-align: center;
   }
   .header__container .header__menu_inner .header__menu li {
     padding: 10px 0;
@@ -506,7 +510,7 @@ li {
     visibility: hidden;
     opacity: 0;
   }
-  .header__container .header__menu_inner .header__menu.open {
+  .header__container .header__menu_inner .header__menu.active {
     visibility: visible;
     opacity: 1;
     -webkit-transition: all .3s ease-in;
@@ -651,12 +655,12 @@ li {
   }
   .modal .modal__size .modal__size-item {
     width: 100%;
-    text-align: center;
   }
   .modal .modal__size .modal__size-item img {
     width: 50%;
     height: 50%;
     margin-top: 10px;
+    text-align: center;
   }
   .seoshine__help-list {
     display: block;
@@ -738,15 +742,6 @@ li {
   letter-spacing: .01em;
 }
 
-.modal .modal__size-item .modal__user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .modal .modal__size-item .modal__user:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -768,7 +763,7 @@ li {
   outline: none;
   border: 1px solid rgba(16, 16, 16, 0.1);
   resize: none;
-  width: calc(100% - 58px);
+  width: 100%;
 }
 
 .modal.active {
@@ -1174,6 +1169,10 @@ li {
     -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
             transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
+}
+
+.close-nav-menu {
+  display: none;
 }
 
 header {

@@ -44,8 +44,8 @@
                 @include text-spacing();
             }
             .modal__user {
-                display: flex;
-                align-items: center;
+                // display: flex;
+                // align-items: center;
                 &:not(:last-child) {
                     margin-bottom: 8px;
                 }
@@ -63,7 +63,7 @@
                     outline: none;
                     border: 1px solid $color-border;
                     resize: none;
-                    width: calc(100% - 58px);
+                    width: 100%;
                 }
             }
         }
@@ -74,6 +74,7 @@
         transition: all 1s;
     }
 }
-.no-scroll{
+
+.no-scroll {
     overflow: hidden;
 }

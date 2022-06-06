@@ -1,12 +1,17 @@
 // mobile và tablet
 @media (max-width: 1023px) {
+    .close-nav-menu {
+        display: block !important;
+        margin: 20px auto auto;
+        cursor: pointer;
+    }
     .header__menu {
         background: $color-white;
         padding: 10px;
         z-index: 10;
-        width: 292px;
-        border-radius: 8px;
-        border: 1px solid $color-grey;
+        // width: 292px;
+        // border-radius: 8px;
+        // border: 1px solid $color-grey;
     }
     .header__container {
         align-items: unset;
@@ -14,10 +19,12 @@
             position: relative;
             .header__menu {
                 display: block !important;
-                position: absolute;
-                top: 50px;
+                position: fixed;
+                top: 105px;
                 right: 0;
-                text-align: right;
+                left: 0;
+                bottom: 0;
+                text-align: center;
                 li {
                     padding: 10px 0;
                     margin-right: unset !important;
@@ -26,7 +33,7 @@
                     visibility: hidden;
                     opacity: 0;
                 }
-                &.open {
+                &.active {
                     visibility: visible;
                     opacity: 1;
                     transition: all .3s ease-in;
@@ -40,7 +47,6 @@
     .nav__menu {
         display: unset !important;
     }
-
 }
 
 // tablet
@@ -68,11 +74,11 @@
                 left: unset !important;
                 top: unset !important;
             }
-            .header__img-2{
+            .header__img-2 {
                 right: unset !important;
                 top: unset !important;
             }
-            .header__img-3{
+            .header__img-3 {
                 top: unset !important;
             }
         }
@@ -149,7 +155,7 @@
             width: 100% !important;
         }
     }
-    .seoshine__circle-inner{
+    .seoshine__circle-inner {
         width: 250px !important;
         height: 250px !important;
         .seoshine__circle-counter {
@@ -161,26 +167,27 @@
         width: calc(100% / 2);
     }
     .modal .modal__size {
-       display: block !important;
-       width: 300px !important;
-       .modal__close {
-           top: 2px !important;
-           right: 2px !important;
-       }
-       .modal__size-item {
-           width: 100%;
-           text-align: center ;
-           img {
-               width: 50%;
-               height: 50%;
-               margin-top: 10px;
-           }
-       }
+        display: block !important;
+        width: 300px !important;
+        .modal__close {
+            top: 2px !important;
+            right: 2px !important;
+        }
+        .modal__size-item {
+            width: 100%;
+            // text-align: center;
+            img {
+                width: 50%;
+                height: 50%;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
     }
     .seoshine__help-list {
-       display: block;
-       .seoshine__help-item {
-           width: 100%;
-       }
+        display: block;
+        .seoshine__help-item {
+            width: 100%;
+        }
     }
 }

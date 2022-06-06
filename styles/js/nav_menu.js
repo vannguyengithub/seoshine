@@ -14,13 +14,27 @@ $(document).on('click', '.modal__close',
 
 
 
-var elementAsideLeftBar = document.getElementById('header__menu');
-var triggerAside = document.getElementById('nav__menu');
-if (triggerAside) {
-    triggerAside.addEventListener('click', () => {
-        elementAsideLeftBar.classList.toggle('open');
+// var elementAsideLeftBar = document.getElementById('header__menu');
+// var triggerAside = document.getElementById('nav__menu');
+// if (triggerAside) {
+//     triggerAside.addEventListener('click', () => {
+//         elementAsideLeftBar.classList.toggle('open');
+//     });
+// }
+var abc = $('#header__menu');
+
+$(document).on('click', '.nav__menu',
+    function(e) {
+        abc.addClass(' active');
+        $('body').addClass('no-scroll');
     });
-}
+$(document).on('click', '.gg-close',
+    function(e) {
+        abc.removeClass('active');
+        $('body').removeClass('no-scroll');
+    });
+
+
 
 
 /* Demo purposes only */

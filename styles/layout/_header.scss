@@ -2,7 +2,7 @@
 
 .header__container {
     background: $color-dark;
-    padding:  0 16px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,9 +101,9 @@
     text-align: center;
     background-image: url('../styles/images/background-dark-min.jpg');
     height: 550px;
-    width: 100%; 
-    background-size: cover; 
-    background-position: cover; 
+    width: 100%;
+    background-size: cover;
+    background-position: cover;
     .header__content-box {
         // position: relative;
         // width: calc(100% - 50%);
@@ -130,7 +130,6 @@
         }
         .header__img-3 {
             // top: -30rem;
-            
         }
     }
     figure.snip1421 {
@@ -274,7 +273,8 @@ $side: 120px;
 $l: 90px;
 $num: 10;
 $dur: 10s;
-@mixin plane($w, $h) {
+@mixin plane($w,
+$h) {
     width: $w;
     height: $h;
     transform-style: preserve-3d;
@@ -294,7 +294,8 @@ $dur: 10s;
 }
 
 .plane {
-    @include plane($side, $side);
+    @include plane($side,
+    $side);
     height: unset !important;
     &.main {
         transform: rotateX(60deg) rotateZ(-30deg);
@@ -346,8 +347,10 @@ $dur: 10s;
     }
 }
 
-
 // 
+.close-nav-menu {
+    display: none;
+}
 
 header {
     // position: absolute;
@@ -360,14 +363,14 @@ header {
     width: 100%;
     z-index: 20;
     &.can-animate {
-      transition: transform 0.3s ease, visibility 0s 0.3s linear;
+        transition: transform 0.3s ease, visibility 0s 0.3s linear;
     }
     &.is-fixed {
-    //   background: rgba(255, 255, 255, 0.9);
-      position: fixed;
-      transform: translate3d(0, -100%, 0);
+        //   background: rgba(255, 255, 255, 0.9);
+        position: fixed;
+        transform: translate3d(0, -100%, 0);
     }
     &.scroll-up {
-      transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
-  }
+}
