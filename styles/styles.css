@@ -517,7 +517,7 @@ li {
     transition: all .3s ease-in;
   }
   .header__container .header__menu_inner .btn--header {
-    margin-right: 8px;
+    margin-right: 16px;
   }
   .nav__menu {
     display: unset !important;
@@ -867,7 +867,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 2px #957000;
+  border: solid 1px #ffff66;
 }
 
 .btn.btn--header i, .btn.btn-primary i {
