@@ -38,8 +38,8 @@ $(document).on('click', '.gg-close',
 
 
 /* Demo purposes only */
-// $(".hover").mouseleave(
-//     function() {
-//         $(this).removeClass("hover");
-//     }
-// );
+$(".hover").mouseleave(
+    function() {
+        $(this).removeClass("hover");
+    }
+);
