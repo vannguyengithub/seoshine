@@ -515,6 +515,7 @@ li {
     opacity: 1;
     -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;
+    height: 100vh;
   }
   .header__container .header__menu_inner .btn--header {
     margin-right: 16px;

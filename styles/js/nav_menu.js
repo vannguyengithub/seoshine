@@ -21,16 +21,16 @@ $(document).on('click', '.modal__close',
 //         elementAsideLeftBar.classList.toggle('open');
 //     });
 // }
-var abc = $('#header__menu');
+var openMenu = $('#header__menu');
 
 $(document).on('click', '.nav__menu',
     function(e) {
-        abc.addClass(' active');
+        openMenu.addClass(' active');
         $('body').addClass('no-scroll');
     });
 $(document).on('click', '.gg-close',
     function(e) {
-        abc.removeClass('active');
+        openMenu.removeClass('active');
         $('body').removeClass('no-scroll');
     });
 
@@ -38,8 +38,8 @@ $(document).on('click', '.gg-close',
 
 
 /* Demo purposes only */
-$(".hover").mouseleave(
-    function() {
-        $(this).removeClass("hover");
-    }
-);
+// $(".hover").mouseleave(
+//     function() {
+//         $(this).removeClass("hover");
+//     }
+// );
